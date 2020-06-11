@@ -1,5 +1,6 @@
 class RoomChannel < ApplicationCable::Channel
   def subscribed
+    stream_from "room_channel"
     # binding.pry
     # フロントエンドとバックエンドを監視しあう
     # stream_from "some_channel"
